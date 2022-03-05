@@ -5,10 +5,15 @@
     list-style-type: none;
 }
 
+@font-face {
+    font-family: 'Smooch Sans', sans-serif;
+    src: url('../public/font/SmoochSans-VariableFont_wght.ttf');
+    ;
+}
+
 html {
     font-size: 200%;
     font-family: 'Smooch Sans', sans-serif;
-    src: url('../public/font/SmoochSans-VariableFont_wght.ttf');
 }
 
 a {
