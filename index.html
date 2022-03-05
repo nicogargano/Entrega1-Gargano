@@ -16,11 +16,15 @@
 <body>
 	<!-- HEADER -->
 	<header>
-		<nav class="navegador">
+		<nav class="navegacion">
 			<a id="logo" href="index.html"><img src="public/img/logo.webp" alt="logo"></a>
-			<ul class="navegadorMenu">
+			<ul class="navegacionMenu">
 				<li><a href="#sobreNosotros">Sobre nosotros</a></li>
 				<li><a href="#servicios">Servicios</a></li>
+					<ul class="navegacionSubMenu">
+						<li><a href="#membrecias">Membrecias</a></li></li>
+						<li><a href="#personalizados">Personalizados</a></li></li>
+					</ul>
 				<li><a href="pages/faq.html">FAQ</a></li>
 				<li><a href="pages/contacto.html">Contacto</a></li>
 			</ul>
@@ -46,7 +50,7 @@
 
 		<section>
 			<article id="servicios">
-				<h2>Membresias que ofrecemos</h2>
+				<h2 id="membrecias">Membresias que ofrecemos</h2>
 				<table border="1" cellpadding="1" cellspacing="1">
 					<tr>
 						<th>Membresia</th>
@@ -69,7 +73,7 @@
 						<td>$10000</td>
 					</tr>
 				</table>
-				<h2>Trabajos personalizados</h2>
+				<h2 id="personalizados">Trabajos personalizados</h2>
 				<ol>
 					<li>Semanal $500</li>
 					<li>Mensual $2000</li>

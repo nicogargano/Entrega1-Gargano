@@ -20,12 +20,12 @@ a {
     padding: 20px;
 }
 
-.navegador {
+.navegacion {
     background-color: rgb(255, 255, 255);
     height: 150px;
 }
 
-.navegadorMenu li {
+.navegacionMenu > li {
     display: inline;
     padding: 10px;
     margin: 60px;
@@ -34,6 +34,13 @@ a {
     bottom: 105px;
     left: 320px;
 }
+
+.navegacionSubMenu {
+    position: relative;
+    display: none;
+}
+
+.navegacionMenu li:hover .navegacionSubMenu
 
 header a {
     color: black;

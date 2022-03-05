@@ -9,17 +9,21 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@500&display=swap" rel="stylesheet">
 	<link rel="shortcut icon" href="../public/img/favicon.png" type="image/x-icon">
-	<link rel="stylesheet" href="/css/contacto.css">
+	<link rel="stylesheet" href="/css/index.css">
 </head>
 
 <body>
 	<!-- HEADER -->
 	<header>
-		<nav class="navegador">
+		<nav class="navegacion">
 			<a id="logo" href="../index.html"><img src="../public/img/logo.webp" alt="logo"></a>
-			<ul class="navegadorMenu">
+			<ul class="navegacionMenu">
 				<li><a href="../index.html#sobreNosotros">Sobre nosotros</a></li>
 				<li><a href="../index.html#servicios">Servicios</a></li>
+					<ul class="navegacionSubMenu">
+						<li><a href="../index.html#servicios">Membrecias</a></li></li>
+						<li><a href="../index.html#servicios">Personalizados</a></li></li>
+					</ul>
 				<li><a href="faq.html">FAQ</a></li>
 				<li><a href="contacto.html">Contacto</a></li>
 			</ul>
@@ -30,7 +34,7 @@
 	<!-- MAIN -->
 	<main>
 		<section>
-			<h1>Contacto</h1>
+			<h2 class="contactoTitulo">Contacto</h2>
 		</section>
 
 		<section>
@@ -81,16 +85,16 @@
 			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6562.548121610084!2d-58.31805765022726!3d-34.673031983417395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a333ba5736a7c9%3A0x2d545f249af51e70!2sReserva%20Costera%20Municipal%20de%20Avellaneda%2C%20Eco%20%C3%81rea!5e0!3m2!1ses!2sar!4v1645911148115!5m2!1ses!2sar"
 			width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></li>
 		<ul>
-			<ul id="horario">
+			<ul id="horarioContacto">
 				<li>Horarios de atencion</li>
 				<li>Lunes a Virnes de 8 a 23 hs</li>
 				<li>Sabados de 9 a 19 hs</li>
 			</ul>
-			<ul id="mail">
+			<ul id="mailContacto">
 				<li>Mail de contacto directo:</li>
 				<li>gimnasio@gmail.com</li>
 			</ul>
-			<li><a href="../index.html#servicios">Servicios</a></li>
+			<li class="serviciosContacto"><a href="../index.html#servicios">Servicios</a></li>
 		</ul>
 	</footer>
 	<!-- FIN DEL FOOTER -->

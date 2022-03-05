@@ -20,19 +20,37 @@ a {
     padding: 20px;
 }
 
-.navegador {
+.navegacion {
     background-color: rgb(255, 255, 255);
     height: 150px;
 }
 
-.navegadorMenu li {
-    display: inline;
-    padding: 10px;
-    margin: 60px;
+.navegacionMenu>li {
+    display: inline-block;
     list-style-type: none;
     position: relative;
-    bottom: 105px;
-    left: 320px;
+    bottom: 100px;
+    left: 700px;
+    padding-inline: 60px;
+}
+
+.navegacionMenu li a:hover {
+    color: brown;
+}
+
+.navegacionSubMenu {
+    position: absolute;
+    width: 11%;
+    display: none;
+    color: black;
+    background-color: aqua;
+    bottom: 570px;
+    left: 1000px;
+    padding: 15px;
+}
+
+.navegacionMenu li:hover .navegacionSubMenu {
+    display: block;
 }
 
 header a {
@@ -51,6 +69,24 @@ h1 {
     color: rgb(255, 255, 255);
     text-shadow: 0 0 10px rgb(255, 0, 0);
     text-align: center;
+}
+
+.faqTitulo {
+    font-size: 150px;
+    text-align: center;
+    padding: 20px;
+}
+
+#faq h2 {
+    font-size: 100px;
+    text-align: center;
+    padding: 20px;
+}
+
+#faq p {
+    font-size: 35px;
+    text-align: center;
+    padding-inline: 40px;
 }
 
 #sobreNosotros h2 {
@@ -108,10 +144,10 @@ h1 {
 
 .footerFondo a {
     color: white;
-    display: inline;
+    display: inline-block;
     position: absolute;
-    bottom: -1560px;
-    left: 1000px;
+    bottom: -1360px;
+    left: 1300px;
 }
 
 .footerFondo iframe {
@@ -119,23 +155,55 @@ h1 {
     padding-top: 70px;
     width: 500px;
     height: 400px;
-    display: inline;
+    display: inline-block;
 }
 
 .footerFondo #horario {
-    display: inline;
+    display: inline-block;
     list-style-type: none;
     position: absolute;
-    bottom: -1630px;
-    left: 530px;
+    bottom: -1430px;
+    left: 700px;
     text-align: center;
 }
 
 .footerFondo #mail {
-    display: inline;
+    display: inline-block;
     list-style-type: none;
     position: absolute;
-    bottom: -1770px;
-    left: 530px;
+    bottom: -1570px;
+    left: 700px;
+    text-align: center;
+}
+
+.serviciosContacto a {
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    position: absolute;
+    bottom: -40px;
+    left: 1300px;
+}
+
+.contactoTitulo {
+    font-size: 150px;
+    text-align: center;
+    padding: 20px;
+}
+
+.footerFondo #horarioContacto {
+    display: inline-block;
+    list-style-type: none;
+    position: absolute;
+    bottom: -100px;
+    left: 700px;
+    text-align: center;
+}
+
+.footerFondo #mailContacto {
+    display: inline-block;
+    list-style-type: none;
+    position: absolute;
+    bottom: -250px;
+    left: 700px;
     text-align: center;
 }
