@@ -45,13 +45,14 @@ a {
 
 .navegacionSubMenu {
     position: absolute;
-    width: 15%;
-    display: block;
+    width: 200px;
+    height: 100px;
+    display: none;
     color: black;
     background-color: rgb(255, 255, 255);
-    bottom: 400px;
-    left: 690px;
-    padding: 15px;
+    text-align: center;
+    right: 5px ;
+    bottom: -120px;
 }
 
 .navegacionMenu li:hover .navegacionSubMenu {
