@@ -39,65 +39,10 @@ header a {
     color: black;
 }
 
-#home {
-    background-image: url(../public/img/Gimnasio.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    font-size: 695%;
-}
-
 h1 {
-    color: rgb(255, 255, 255);
-    text-shadow: 0 0 10px rgb(255, 0, 0);
-    text-align: center;
-}
-
-#sobreNosotros h2 {
-    font-size: 100px;
+    font-size: 150px;
     text-align: center;
     padding: 20px;
-}
-
-#sobreNosotros p {
-    font-size: 35px;
-    text-align: center;
-    padding-inline: 40px;
-}
-
-#servicios h2 {
-    font-size: 100px;
-    text-align: center;
-    padding: 20px;
-}
-
-#servicios table {
-    font-size: 40px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#servicios th {
-    background-color: rgb(136, 7, 7);
-    color: white;
-    padding-inline: 20px;
-    text-align: center;
-}
-
-#servicios td {
-    padding-inline: 20px;
-}
-
-#servicios p {
-    font-size: 35px;
-    text-align: center;
-    padding: 40px;
-}
-
-#servicios ol {
-    font-size: 50px;
-    text-align: center;
-    line-height: 80px;
 }
 
 .footerFondo {
@@ -110,7 +55,7 @@ h1 {
     color: white;
     display: inline;
     position: absolute;
-    bottom: -1560px;
+    bottom: -305px;
     left: 1000px;
 }
 
@@ -126,7 +71,7 @@ h1 {
     display: inline;
     list-style-type: none;
     position: absolute;
-    bottom: -1630px;
+    bottom: -375px;
     left: 530px;
     text-align: center;
 }
@@ -135,7 +80,14 @@ h1 {
     display: inline;
     list-style-type: none;
     position: absolute;
-    bottom: -1770px;
+    bottom: -515px;
     left: 530px;
     text-align: center;
+}
+
+.linea {
+    border-top: 1.5px solid black;
+    height: 2px;
+    padding: 0;
+    margin: 20px auto 0 auto;
 }
