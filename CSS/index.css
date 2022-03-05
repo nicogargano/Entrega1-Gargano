@@ -35,7 +35,7 @@ a {
     list-style-type: none;
     position: relative;
     bottom: 100px;
-    left: 350px;
+    left: 400px;
     padding-inline: 60px;
 }
 
@@ -45,16 +45,16 @@ a {
 
 .navegacionSubMenu {
     position: absolute;
-    width: 11%;
-    display: none;
+    width: 15%;
+    display: block;
     color: black;
     background-color: aqua;
-    bottom: 570px;
-    left: 1000px;
+    bottom: 400px;
+    left: 690px;
     padding: 15px;
 }
 
-.navegacionMenu li:hover .navegacionSubMenu{
+.navegacionMenu li:hover .navegacionSubMenu {
     display: block;
 }
 
@@ -151,7 +151,7 @@ h1 {
     color: white;
     display: inline-block;
     position: absolute;
-    bottom: -2070px;
+    bottom: -2030px;
     left: 1000px;
 }
 
@@ -167,7 +167,7 @@ h1 {
     display: inline-block;
     list-style-type: none;
     position: absolute;
-    bottom: -2140px;
+    bottom: -2100px;
     left: 560px;
     text-align: center;
 }
@@ -176,7 +176,7 @@ h1 {
     display: inline-block;
     list-style-type: none;
     position: absolute;
-    bottom: -2250px;
+    bottom: -2240px;
     left: 560px;
     text-align: center;
 }
@@ -185,7 +185,7 @@ h1 {
     color: rgb(255, 255, 255);
     display: inline-block;
     position: absolute;
-    bottom: -275px;
+    bottom: -200px;
     left: 1000px;
 }
 
@@ -199,7 +199,7 @@ h1 {
     display: inline-block;
     list-style-type: none;
     position: absolute;
-    bottom: -350px;
+    bottom: -270px;
     left: 560px;
     text-align: center;
 }
@@ -208,7 +208,7 @@ h1 {
     display: inline-block;
     list-style-type: none;
     position: absolute;
-    bottom: -500px;
+    bottom: -400px;
     left: 560px;
     text-align: center;
 }
