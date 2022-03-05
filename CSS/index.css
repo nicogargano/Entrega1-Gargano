@@ -48,7 +48,7 @@ a {
     width: 15%;
     display: block;
     color: black;
-    background-color: aqua;
+    background-color: rgb(255, 255, 255);
     bottom: 400px;
     left: 690px;
     padding: 15px;
@@ -92,6 +92,12 @@ h1 {
     font-size: 35px;
     text-align: center;
     padding-inline: 40px;
+}
+
+.contactoTitulo {
+    font-size: 150px;
+    text-align: center;
+    padding: 20px;
 }
 
 #sobreNosotros h2 {
@@ -187,12 +193,6 @@ h1 {
     position: absolute;
     bottom: -200px;
     left: 1000px;
-}
-
-.contactoTitulo {
-    font-size: 150px;
-    text-align: center;
-    padding: 20px;
 }
 
 .footerFondo #horarioContacto {
