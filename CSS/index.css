@@ -50,7 +50,7 @@ a {
 }
 
 .navegacionMenu li:hover .navegacionSubMenu {
-    display: block;
+        display: block;
 }
 
 header a {
