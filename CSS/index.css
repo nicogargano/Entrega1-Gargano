@@ -51,8 +51,8 @@ a {
     color: black;
     background-color: rgb(255, 255, 255);
     text-align: center;
-    right: 5px ;
-    bottom: -120px;
+    right: 5px;
+    bottom: -100px;
 }
 
 .navegacionMenu li:hover .navegacionSubMenu {
@@ -154,8 +154,8 @@ h1 {
     height: 450px;
 }
 
-.footerFondo a {
-    color: white;
+.footerFondo .servicios a {
+    color: rgb(255, 255, 255);
     display: inline-block;
     position: absolute;
     bottom: -2030px;
@@ -212,4 +212,52 @@ h1 {
     bottom: -400px;
     left: 560px;
     text-align: center;
+}
+
+.wpp {
+    position: absolute;
+    top: 2820px;
+    right: 300px;
+}
+
+.tw {
+    position: absolute;
+    top: 2820px;
+    right: 230px;
+}
+
+.ig {
+    position: absolute;
+    top: 2820px;
+    right: 160px;
+}
+
+.fb {
+    position: absolute;
+    top: 2820px;
+    right: 90px;
+}
+
+.wppC {
+    position: absolute;
+    top: 990px;
+    right: 300px;
+}
+
+.twC {
+    position: absolute;
+    top: 990px;
+    right: 230px;
+}
+
+.igC {
+    position: absolute;
+    top: 990px;
+    right: 160px;
+}
+
+.fbC {
+    position: absolute;
+    top: 990px;
+    right: 90px;
 }
