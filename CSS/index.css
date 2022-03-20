@@ -309,6 +309,11 @@ h1 {
     gap: 10px;
 }
 
+form {
+    border: 2px solid gray;
+    padding: 5px;
+}
+
 /* FOOTER */
 
 .footer {
@@ -359,3 +364,19 @@ h1 {
     color: var(--principal);
 }
 
+/* MEDIA QUERIES*/
+
+@media screen and (max-width: 810px) {
+    header {
+        padding: 2em 0;
+    }
+
+    header .navegacion {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #home {
+        font-size: 12rem;
+    }
+}
