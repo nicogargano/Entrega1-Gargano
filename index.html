@@ -16,16 +16,19 @@
 <body>
 	<!-- HEADER -->
 	<header>
-		<nav class="navegacion">
-			<a id="logo" href="index.html"><img src="public/img/logo.webp" alt="logo"></a>
-			<ul class="navegacionMenu">
-				<li><a href="#sobreNosotros">Sobre nosotros</a></li>
+		<nav class="navegacion flex-row container">
+			<picture>
+				<a class="logo" href="index.html"><img src="public/img/logo.webp" alt="logo"></a>
+			</picture>
+			<ul class="navegacionMenu flex-row">
+				<li><a href="#nosotros">Nosotros</a></li>
 				<li><a href="#servicios">Servicios</a>
 					<ul class="navegacionSubMenu">
 						<li><a href="#membresias">Membresias</a></li>
 						<li><a href="#personalizados">Personalizados</a></li>
 					</ul>
 				</li>
+				<li><a href="pages/galeria.html">Galeria</a></li>
 				<li><a href="pages/faq.html">FAQ</a></li>
 				<li><a href="pages/contacto.html">Contacto</a></li>
 			</ul>
@@ -33,7 +36,7 @@
 	</header>
 	<!-- FIN DEL HEADER -->
 	<!-- MAIN -->
-	<main>
+	<main class="container">
 		<section>
 			<article id="home">
 				<h1>Slogan de la empresa</h1>
@@ -41,20 +44,14 @@
 		</section>
 
 		<section>
-			<article id="sobreNosotros">
-				<h2>Sobre nosotros</h2>
-				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, mollitia. Facilis, cumque, mollitia
-					quos sit aspernatur ratione suscipit officiis repellendus architecto optio eum officia laborum cum
-					dolore possimus perspiciatis molestias! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, mollitia. Facilis, cumque, mollitia
-					quos sit aspernatur ratione suscipit officiis repellendus architecto optio eum officia laborum cum
-					dolore possimus perspiciatis molestias! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, mollitia. Facilis, cumque, mollitia
-					quos sit aspernatur ratione suscipit officiis repellendus architecto optio eum officia laborum cum
-					dolore possimus perspiciatis molestias! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, mollitia. Facilis, cumque, mollitia
-					quos sit aspernatur ratione suscipit officiis repellendus architecto optio eum officia laborum cum
-					dolore possimus perspiciatis molestias! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+			<article id="nosotros">
+				<h2 class="titulo1">Sobre nosotros</h2>
+				<p class="parrafo1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores debitis repellat
+					esse culpa soluta veritatis maxime quam quia quasi, id laborum magnam sed qui voluptatum, deleniti
+					optio error sapiente quas!</p>
+				<picture>
+					<img class="imagen1" src="public/img/logo.webp" alt="logo">
+				</picture>
 			</article>
 		</section>
 
@@ -83,47 +80,56 @@
 						<td>$10000</td>
 					</tr>
 				</table>
-				<h2 id="personalizados">Trabajos personalizados</h2>
-				<ol>
-					<li>Semanal $500</li>
-					<li>Mensual $2000</li>
-					<li>Anual $20000</li>
-				</ol>
-				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, mollitia. Facilis, cumque, mollitia
-					quos sit aspernatur ratione suscipit officiis repellendus architecto optio eum officia laborum cum
-					dolore possimus perspiciatis molestias! Lorem ipsum dolor sit amet consectetur adipisicing
-					elit.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, mollitia. Facilis, cumque,
-					mollitia
-					quos sit aspernatur ratione suscipit officiis repellendus architecto optio eum officia Lorem ipsum,
-					dolor sit amet consectetur adipisicing elit. Qui, mollitia. Facilis, cumque, mollitia
-					quos sit aspernatur ratione</p>
+				<div id="serviciosPersonalizados">
+					<h2 id="personalizados">Trabajos personalizados</h2>
+					<ol class="lista1">
+						<li>Semanal $500</li>
+						<li>Mensual $2000</li>
+						<li>Anual $20000</li>
+					</ol>
+					<p class="parrafo2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita tempora
+						laudantium, corporis molestias, neque hic odit enim asperiores quo fuga eius? Animi aspernatur
+						id explicabo quibusdam veniam magnam provident tenetur?</p>
+					<picture>
+						<img class="imagen2" src="public/img/logo.webp" alt="logo">
+					</picture>
+				</div>
 			</article>
 		</section>
 	</main>
 	<!-- FIN DEL MAIN -->
 	<!-- FOOTER -->
-	<footer class="footerFondo">
-		<iframe
-			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6562.548121610084!2d-58.31805765022726!3d-34.673031983417395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a333ba5736a7c9%3A0x2d545f249af51e70!2sReserva%20Costera%20Municipal%20de%20Avellaneda%2C%20Eco%20%C3%81rea!5e0!3m2!1ses!2sar!4v1645911148115!5m2!1ses!2sar"
-			width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></li>
-		<ul>
-			<ul id="horario">
-				<li>Horarios de atencion</li>
-				<li>Lunes a Virnes de 8 a 23 hs</li>
-				<li>Sabados de 9 a 19 hs</li>
-			</ul>
-			<ul id="mail">
-				<li>Mail de contacto directo:</li>
-				<li>gimnasio@gmail.com</li>
-			</ul>
-			<li class="servicios"><a href="#servicios">Servicios</a></li>
-			<ul>
-				<li><a class="ig" href="https://www.instagram.com"><img src="public/img/ig.png" alt="ig"></a></li>
-				<li><a class="fb" href="https://www.fb.com"><img src="public/img/fb.png" alt="fb"></a></li>
-				<li><a class="tw" href="https://www.twitter.com"><img src="public/img/tw.png" alt="tw"></a></li>
-				<li><a class="wpp" href="https://www.whatsapp.com"><img src="public/img/wpp.png" alt="wpp"></a></li>
-			</ul>
-		</ul>
+	<footer class="container">
+		<div class="footer">
+			<div id="horario">
+				<ul>
+					<li>Horarios de atencion</li>
+					<li>Lunes a Virnes de 8 a 23 hs</li>
+					<li>Sabados de 9 a 19 hs</li>
+				</ul>
+			</div>
+			<div id="mail">
+				<ul>
+					<li>Mail de contacto directo:</li>
+					<li>gimnasio@gmail.com</li>
+				</ul>
+			</div>
+			<div id="servicios">
+				<a href="#servicios">Servicios</a>
+			</div>
+			<div id="ig">
+				<a href="https://www.instagram.com"><img src="public/img/ig.png" alt="ig"></a>
+			</div>
+			<div id="fb">
+				<a href="https://www.fb.com"><img src="public/img/fb.png" alt="fb"></a>
+			</div>
+			<div id="tw">
+				<a href="https://www.twitter.com"><img src="public/img/tw.png" alt="tw"></a>
+			</div>
+			<div id="wpp">
+				<a href="https://www.whatsapp.com"><img src="public/img/wpp.png" alt="wpp"></a>
+			</div>
+		</div>
 	</footer>
 	<!-- FIN DEL FOOTER -->
 </body>
