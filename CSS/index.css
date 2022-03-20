@@ -295,9 +295,20 @@ h1 {
     padding: 20px;
 }
 
-.form {
-    font-size: 20px;
+#formulario {
+    font-size: 14px;
 }
+
+#formulario {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: var(--secondary);
+    color: var(--principal);
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+}
+
 /* FOOTER */
 
 .footer {
