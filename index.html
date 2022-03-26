@@ -14,124 +14,140 @@
 </head>
 
 <body>
-	<!-- HEADER -->
-	<header>
-		<nav class="navegacion flex-row container">
-			<picture>
-				<a class="logo" href="index.html"><img src="public/img/logo.webp" alt="logo"></a>
-			</picture>
-			<ul class="navegacionMenu flex-row">
-				<li><a href="#nosotros">Nosotros</a></li>
-				<li><a href="#servicios">Servicios</a>
-					<ul class="navegacionSubMenu">
-						<li><a href="#membresias">Membresias</a></li>
-						<li><a href="#personalizados">Personalizados</a></li>
-					</ul>
-				</li>
-				<li><a href="pages/galeria.html">Galeria</a></li>
-				<li><a href="pages/faq.html">FAQ</a></li>
-				<li><a href="pages/contacto.html">Contacto</a></li>
-			</ul>
-		</nav>
-	</header>
-	<!-- FIN DEL HEADER -->
-	<!-- MAIN -->
-	<main class="container">
-		<section>
-			<article id="home">
-				<h1>Slogan de la empresa</h1>
-			</article>
-		</section>
-
-		<section>
-			<article id="nosotros">
-				<h2 class="titulo1">Sobre nosotros</h2>
-				<p class="parrafo1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores debitis repellat
-					esse culpa soluta veritatis maxime quam quia quasi, id laborum magnam sed qui voluptatum, deleniti
-					optio error sapiente quas!</p>
+	<div class="container">
+		<!-- HEADER -->
+		<header>
+			<nav class="navegacion flex-row">
 				<picture>
-					<img class="imagen1" src="public/img/logo.webp" alt="logo">
+					<a class="logo" href="index.html"><img src="public/img/logo.webp" alt="logo"></a>
 				</picture>
-			</article>
-		</section>
+				<ul class="navegacionMenu flex-row">
+					<li><a href="#nosotros">Nosotros</a></li>
+					<li><a href="#servicios">Servicios</a>
+						<ul class="navegacionSubMenu">
+							<li><a href="#membresias">Membresias</a></li>
+							<li><a href="#personalizados">Personalizados</a></li>
+						</ul>
+					</li>
+					<li><a href="pages/galeria.html">Galeria</a></li>
+					<li><a href="pages/faq.html">FAQ</a></li>
+					<li><a href="pages/contacto.html">Contacto</a></li>
+				</ul>
+			</nav>
+		</header>
+		<!-- FIN DEL HEADER -->
+		<!-- MAIN -->
+		<main>
+			<section>
+				<article class="home">
+					<h1>Slogan de la empresa</h1>
+				</article>
+			</section>
 
-		<section>
-			<article id="servicios">
-				<h2 id="membresias">Membresias que ofrecemos</h2>
-				<table border="1" cellpadding="1" cellspacing="1">
-					<tr>
-						<th>Membresia</th>
-						<th>Incluye</th>
-						<th>Valor</th>
-					</tr>
-					<tr>
-						<td>Semanal</td>
-						<td>Duracion una semana</td>
-						<td>$1000</td>
-					</tr>
-					<tr>
-						<td>Mensual</td>
-						<td>Duracion un mes y de regalo primer semana de personalizado</td>
-						<td>$3500</td>
-					</tr>
-					<tr>
-						<td>Anual</td>
-						<td>Duracion un anio y de regalo un mes a elegir de personalizado</td>
-						<td>$10000</td>
-					</tr>
-				</table>
-				<div id="serviciosPersonalizados">
-					<h2 id="personalizados">Trabajos personalizados</h2>
-					<ol class="lista1">
-						<li>Semanal $500</li>
-						<li>Mensual $2000</li>
-						<li>Anual $20000</li>
-					</ol>
-					<p class="parrafo2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita tempora
-						laudantium, corporis molestias, neque hic odit enim asperiores quo fuga eius? Animi aspernatur
-						id explicabo quibusdam veniam magnam provident tenetur?</p>
+			<section>
+				<article id="nosotros">
+					<h2 class="titulo1">Sobre nosotros</h2>
+					<p class="parrafo1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores debitis repellat
+						esse culpa soluta veritatis maxime quam quia quasi, id laborum magnam sed qui voluptatum, deleniti
+						optio error sapiente quas!</p>
 					<picture>
-						<img class="imagen2" src="public/img/logo.webp" alt="logo">
+						<img class="imagen1" src="public/img/logo.webp" alt="logo">
 					</picture>
+				</article>
+			</section>
+
+			<section>
+				<article id="servicios">
+					<h2 id="membresias">Membresias que ofrecemos</h2>
+					<!-- <table border="1" cellpadding="1" cellspacing="1">
+						<tr>
+							<th>Membresia</th>
+							<th>Incluye</th>
+							<th>Valor</th>
+						</tr>
+						<tr>
+							<td>Semanal</td>
+							<td>Duracion una semana</td>
+							<td>$1000</td>
+						</tr>
+						<tr>
+							<td>Mensual</td>
+							<td>Duracion un mes y de regalo primer semana de personalizado</td>
+							<td>$3500</td>
+						</tr>
+						<tr>
+							<td>Anual</td>
+							<td>Duracion un año y de regalo un mes a elegir de personalizado</td>
+							<td>$10000</td>
+						</tr>
+					</table> -->
+					<div class="tablaMembresias border">
+						<p class="m1">Membresias</p>
+						<p class="i1">Incluye</p>
+						<p class="v1">Valor</p>
+						<p class="m2">Semanal</p>
+						<p class="m3">Mensual</p>
+						<p class="m4">Anual</p>
+						<p class="i2">Duracion una semana</p>
+						<p class="i3">Duracion un mes y de regalo primer semana de personalizado</p>
+						<p class="i4">Duracion un año y de regalo un mes a elegir de personalizado</p>
+						<p class="v2">$1000</p>
+						<p class="v3">$3500</p>
+						<p class="v4">$10000</p>
+					</div>
+					<div id="serviciosPersonalizados">
+						<h2 id="personalizados">Trabajos personalizados</h2>
+						<ol class="lista1">
+							<li>Semanal $500</li>
+							<li>Mensual $2000</li>
+							<li>Anual $20000</li>
+						</ol>
+						<p class="parrafo2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita tempora
+							laudantium, corporis molestias, neque hic odit enim asperiores quo fuga eius? Animi aspernatur
+							id explicabo quibusdam veniam magnam provident tenetur?</p>
+						<picture>
+							<img class="imagen2" src="public/img/logo.webp" alt="logo">
+						</picture>
+					</div>
+				</article>
+			</section>
+		</main>
+		<!-- FIN DEL MAIN -->
+		<!-- FOOTER -->
+		<footer>
+			<div class="footer">
+				<div id="horario">
+					<ul>
+						<li>Horarios de atencion</li>
+						<li>Lunes a Virnes de 8 a 23 hs</li>
+						<li>Sabados de 9 a 19 hs</li>
+					</ul>
 				</div>
-			</article>
-		</section>
-	</main>
-	<!-- FIN DEL MAIN -->
-	<!-- FOOTER -->
-	<footer class="container">
-		<div class="footer">
-			<div id="horario">
-				<ul>
-					<li>Horarios de atencion</li>
-					<li>Lunes a Virnes de 8 a 23 hs</li>
-					<li>Sabados de 9 a 19 hs</li>
-				</ul>
+				<div id="mail">
+					<ul>
+						<li>Mail de contacto directo:</li>
+						<li>gimnasio@gmail.com</li>
+					</ul>
+				</div>
+				<div id="servicios">
+					<a href="#servicios">Servicios</a>
+				</div>
+				<div id="ig">
+					<a href="https://www.instagram.com"><img src="public/img/ig.png" alt="ig"></a>
+				</div>
+				<div id="fb">
+					<a href="https://www.fb.com"><img src="public/img/fb.png" alt="fb"></a>
+				</div>
+				<div id="tw">
+					<a href="https://www.twitter.com"><img src="public/img/tw.png" alt="tw"></a>
+				</div>
+				<div id="wpp">
+					<a href="https://www.whatsapp.com"><img src="public/img/wpp.png" alt="wpp"></a>
+				</div>
 			</div>
-			<div id="mail">
-				<ul>
-					<li>Mail de contacto directo:</li>
-					<li>gimnasio@gmail.com</li>
-				</ul>
-			</div>
-			<div id="servicios">
-				<a href="#servicios">Servicios</a>
-			</div>
-			<div id="ig">
-				<a href="https://www.instagram.com"><img src="public/img/ig.png" alt="ig"></a>
-			</div>
-			<div id="fb">
-				<a href="https://www.fb.com"><img src="public/img/fb.png" alt="fb"></a>
-			</div>
-			<div id="tw">
-				<a href="https://www.twitter.com"><img src="public/img/tw.png" alt="tw"></a>
-			</div>
-			<div id="wpp">
-				<a href="https://www.whatsapp.com"><img src="public/img/wpp.png" alt="wpp"></a>
-			</div>
-		</div>
-	</footer>
-	<!-- FIN DEL FOOTER -->
+		</footer>
+		<!-- FIN DEL FOOTER -->
+	</div>
 </body>
 
 </html>

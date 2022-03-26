@@ -54,6 +54,7 @@ body {
 }
 
 .container {
+    width: 90%;
     max-width: 1080px;
     margin: 0 auto;
 }
@@ -112,12 +113,12 @@ header a {
 
 /* MAIN */
 
-#home {
+.home {
     background-image: url(../public/img/Gimnasio.jpg);
-    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
     font-size: 19.5rem;
+    padding: 1rem;
 }
 
 h1 {
@@ -152,24 +153,25 @@ h1 {
 }
 
 #nosotros h2 {
-    font-size: 100px;
+    font-size: 10rem;
     text-align: center;
     padding: 10px;
 }
 
 #nosotros p {
-    font-size: 35px;
+    font-size: 3.5rem;
     text-align: center;
     padding-inline: 40px;
 }
 
-#servicios h2 {
-    font-size: 100px;
+#membresias{
+    font-size: 10rem;
     text-align: center;
     padding: 10px;
+    padding-bottom: 75px;
 }
 
-#servicios table {
+/* #servicios table {
     font-size: 40px;
     margin-left: auto;
     margin-right: auto;
@@ -185,31 +187,114 @@ h1 {
 
 #servicios td {
     padding-inline: 20px;
+} */
+
+#servicios .tablaMembresias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+        "m1 i1 v1"
+        "m2 i2 v2"
+        "m3 i3 v3"
+        "m4 i4 v4";
+    align-items: center;
+    text-align: center;
+    font-size: 3.2rem;
 }
 
-#servicios p {
-    font-size: 35px;
-    text-align: center;
-    padding: 40px;
+.border {
+    border: 1px solid black;
+}
+
+#servicios .m1 {
+    grid-area: m1;
+    color: var(--tertiary);
+}
+
+#servicios .m2 {
+    grid-area: m2;
+}
+
+
+#servicios .m3 {
+    grid-area: m3;
+}
+
+
+#servicios .m4 {
+    grid-area: m4;
+}
+
+
+#servicios .i1 {
+    grid-area: i1;
+    color: var(--tertiary);
+}
+
+
+#servicios .i2 {
+    grid-area: i2;
+}
+
+
+#servicios .i3 {
+    grid-area: i3;
+}
+
+
+#servicios .i4 {
+    grid-area: i4;
+}
+
+
+#servicios .v1 {
+    grid-area: v1;
+    color: var(--tertiary);
+}
+
+
+#servicios .v2 {
+    grid-area: v2;
+}
+
+
+#servicios .v3 {
+    grid-area: v3;
+}
+
+
+#servicios .v4 {
+    grid-area: v4;
 }
 
 #servicios ol {
-    font-size: 40px;
+    font-size: 6rem;
     text-align: center;
-    line-height: 40px;
+}
+
+#personalizados{
+    font-size: 10rem;
+    text-align: center;
+}
+
+#serviciosPersonalizados p {
+    font-size: 3.5rem;
+    text-align: center;
+    padding: 40px;
 }
 
 #serviciosPersonalizados{
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(4 fr1);
+    grid-template-rows: repeat(3, 1fr);
     grid-template-areas:
         "titulo2 titulo2"
         "lista1 lista1"
         "parrafo2 imagen2";
-    gap: 40px;
     align-items: center;
     justify-items: center;
+    padding-bottom: 50px;
 }
 
 #serviciosPersonalizados #personalizados {
@@ -230,8 +315,8 @@ h1 {
 
 #galeria {
     display: grid;
-    grid-template-columns: repeat(3 1fr);
-    grid-template-rows: repeat(3 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-template-areas:
         "imagen1 imagen2 imagen3"
         "imagen4 imagen6 imagen6"
@@ -272,31 +357,31 @@ h1 {
 }
 
 .faqTitulo {
-    font-size: 150px;
+    font-size: 15rem;
     text-align: center;
     padding: 20px;
 }
 
 #faq h2 {
-    font-size: 100px;
+    font-size: 10rem;
     text-align: center;
     padding: 20px;
 }
 
 #faq p {
-    font-size: 35px;
+    font-size: 3.5rem;
     text-align: center;
     padding-inline: 40px;
 }
 
 .contactoTitulo {
-    font-size: 150px;
+    font-size: 15rem;
     text-align: center;
     padding: 20px;
 }
 
 #formulario {
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 #formulario {
@@ -366,7 +451,7 @@ form {
 
 /* MEDIA QUERIES*/
 
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 768px) {
     header {
         padding: 2em 0;
     }
@@ -376,7 +461,45 @@ form {
         justify-content: center;
     }
 
-    #home {
+    img {
+        flex-grow: 1;
+    }
+
+    #nosotros {
+        grid-template-columns:  1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+        "titulo1"
+        "parrafo1"
+        "imagen1";
+        gap: 0;
+    }
+
+    #serviciosPersonalizados{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+            "titulo2"
+            "lista1"
+            "imagen2"
+            "parrafo2";
+            gap: 0;
+    }
+
+    #galeria {
+        
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas:
+            "imagen1 imagen2"
+            "imagen3 imagen3"
+            "imagen6 imagen6"
+            "imagen6 imagen6"
+            "imagen4 imagen5" ;
+        gap: 0;
+    }
+
+    .home {
         font-size: 12rem;
     }
 }
