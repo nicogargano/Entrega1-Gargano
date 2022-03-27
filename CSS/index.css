@@ -23,11 +23,6 @@
 
 /* GLOBAL */
 
-html {
-    font-size: 62.5%;
-    font-family: 'Smooch Sans', sans-serif;
-}
-
 a {
     text-decoration: none;
 }
@@ -39,9 +34,12 @@ ul {
 ol {
     list-style-type: none;
 }
+
 body {
     min-height: 100vh;
+    font-family: 'Smooch Sans', sans-serif;
 }
+
 /* HELPERS */
 
 .flex-row {
@@ -53,11 +51,11 @@ body {
     flex-direction: column;
 }
 
-.container {
+/* .container {
     width: 90%;
     max-width: 1080px;
     margin: 0 auto;
-}
+} */
 
 /* NAVEGACION */
 
@@ -66,49 +64,27 @@ header {
     border-bottom: 2px solid gray;
 }
 
-header .logo img {
-    flex-basis: 30%;
-    height: 100px;
+.navbar-expand-lg .navbar-collapse {
+    justify-content: space-around;
 }
 
-header .navegacion {
-    min-height: 10vh;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2rem;
-}
-
-header .navegacionMenu {
-    flex-basis: 40%;
-    justify-content: space-between;
-}
-
-header a {
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
     color: var(--principal);
 }
 
-.navegacionMenu li {
-    border: 2px solid var(--secondary);
-    transition: all .3s ease-in-out;
+.navbar-light .navbar-nav .nav-link {
+    color: var(--principal);
+    font-size: 2rem;
 }
 
-.navegacionMenu li a:hover {
-    color: var(--tertiary);
+.dropdown-item {
+    color: var(--principal);
+    font-size: 1.5rem;
 }
 
-.navegacionMenu a {
-    font-size: 3.2rem;
-    padding: 1rem;
-}
-
-.navegacionSubMenu {
-    position: absolute;
-    display: none;
-    background-color: var(--secondary);
-}
-
-.navegacionMenu li:hover .navegacionSubMenu {
-    display: block;
+.dropdown-item:focus, .dropdown-item:hover {
+    color: var(--principal);
+    font-size: 2rem;
 }
 
 /* MAIN */
@@ -125,6 +101,11 @@ h1 {
     color: var(--secondary);
     text-shadow: 0 0 10px var(--tertiary);
     text-align: center;
+}
+
+.h1,
+h1 {
+    font-size: 15rem;
 }
 
 #nosotros {
@@ -159,12 +140,12 @@ h1 {
 }
 
 #nosotros p {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     text-align: center;
     padding-inline: 40px;
 }
 
-#membresias{
+#membresias {
     font-size: 10rem;
     text-align: center;
     padding: 10px;
@@ -273,18 +254,18 @@ h1 {
     text-align: center;
 }
 
-#personalizados{
+#personalizados {
     font-size: 10rem;
     text-align: center;
 }
 
 #serviciosPersonalizados p {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     text-align: center;
     padding: 40px;
 }
 
-#serviciosPersonalizados{
+#serviciosPersonalizados {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: repeat(3, 1fr);
@@ -369,7 +350,7 @@ h1 {
 }
 
 #faq p {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     text-align: center;
     padding-inline: 40px;
 }
@@ -461,21 +442,17 @@ form {
         justify-content: center;
     }
 
-    img {
-        flex-grow: 1;
-    }
-
     #nosotros {
-        grid-template-columns:  1fr;
+        grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 1fr);
         grid-template-areas:
-        "titulo1"
-        "parrafo1"
-        "imagen1";
+            "titulo1"
+            "parrafo1"
+            "imagen1";
         gap: 0;
     }
 
-    #serviciosPersonalizados{
+    #serviciosPersonalizados {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, 1fr);
         grid-template-areas:
@@ -483,11 +460,11 @@ form {
             "lista1"
             "imagen2"
             "parrafo2";
-            gap: 0;
+        gap: 0;
     }
 
     #galeria {
-        
+
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(5, 1fr);
         grid-template-areas:
@@ -495,11 +472,158 @@ form {
             "imagen3 imagen3"
             "imagen6 imagen6"
             "imagen6 imagen6"
-            "imagen4 imagen5" ;
+            "imagen4 imagen5";
         gap: 0;
     }
 
-    .home {
-        font-size: 12rem;
+    .h1,
+    h1 {
+        font-size: 10rem;
+    }
+
+    #nosotros h2 {
+        font-size: 6rem;
+    }
+
+    #nosotros p {
+        font-size: 2rem;
+    }
+
+    #membresias {
+        font-size: 6rem;
+    }
+
+    #servicios .tablaMembresias {
+        font-size: 2rem;
+    }
+
+    #personalizados {
+        font-size: 6rem;
+    }
+
+    #servicios ol {
+        font-size: 3rem;
+    }
+
+    #serviciosPersonalizados p {
+        font-size: 2rem;
+    }
+
+    .footer {
+        font-size: 1.5rem;
+    }
+
+    #faq h2 {
+        font-size: 6rem;
+    }
+
+    #faq p {
+        font-size: 2rem;
+    }
+
+    .contactoTitulo {
+        font-size: 10rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header {
+        padding: 2em 0;
+    }
+
+    header .navegacion {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #nosotros {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "titulo1"
+            "parrafo1"
+            "imagen1";
+        gap: 0;
+    }
+
+    #serviciosPersonalizados {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+            "titulo2"
+            "lista1"
+            "imagen2"
+            "parrafo2";
+        gap: 0;
+    }
+
+    #galeria {
+
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas:
+            "imagen1 imagen2"
+            "imagen3 imagen3"
+            "imagen6 imagen6"
+            "imagen6 imagen6"
+            "imagen4 imagen5";
+        gap: 0;
+    }
+
+    .h1,
+    h1 {
+        font-size: 5rem;
+    }
+
+    #nosotros h2 {
+        font-size: 3rem;
+    }
+
+    #nosotros p {
+        font-size: 1rem;
+    }
+
+    #membresias {
+        font-size: 3rem;
+    }
+
+    #servicios .tablaMembresias {
+        font-size: 1rem;
+    }
+
+    #personalizados {
+        font-size: 3rem;
+    }
+
+    #servicios ol {
+        font-size: 1.5rem;
+    }
+
+    #serviciosPersonalizados p {
+        font-size: 1rem;
+    }
+
+    .footer {
+        font-size: 0.75rem;
+    }
+
+    img {
+        height: 170px;
+    }
+
+    .footer img {
+        height: 30px;
+    }
+
+    #faq h2 {
+        font-size: 3rem;
+    }
+
+    #faq p {
+        font-size: 1rem;
+    }
+
+    .contactoTitulo {
+        font-size: 5rem;
     }
 }

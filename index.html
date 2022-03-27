@@ -10,6 +10,8 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@500&display=swap" rel="stylesheet">
 	<link rel="shortcut icon" href="public/img/favicon.png" type="image/x-icon">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/index.css">
 </head>
 
@@ -17,22 +19,43 @@
 	<div class="container">
 		<!-- HEADER -->
 		<header>
-			<nav class="navegacion flex-row">
-				<picture>
-					<a class="logo" href="index.html"><img src="public/img/logo.webp" alt="logo"></a>
-				</picture>
-				<ul class="navegacionMenu flex-row">
-					<li><a href="#nosotros">Nosotros</a></li>
-					<li><a href="#servicios">Servicios</a>
-						<ul class="navegacionSubMenu">
-							<li><a href="#membresias">Membresias</a></li>
-							<li><a href="#personalizados">Personalizados</a></li>
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="index.html">
+						<img src="public/img/logo.webp" alt="logo" width="200" height="150">
+					</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+						data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+						aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNavDropdown">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#nosotros">Nosotros</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#servicios" id="navbarDropdownMenuLink"
+									role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									Servicios
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+									<li><a class="dropdown-item" href="#membresias">Membresias</a></li>
+									<li><a class="dropdown-item" href="#personalizados">Personalizados</a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="pages/galeria.html">Galeria</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="pages/faq.html">FAQ</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="pages/contacto.html">Contacto</a>
+							</li>
 						</ul>
-					</li>
-					<li><a href="pages/galeria.html">Galeria</a></li>
-					<li><a href="pages/faq.html">FAQ</a></li>
-					<li><a href="pages/contacto.html">Contacto</a></li>
-				</ul>
+					</div>
+				</div>
 			</nav>
 		</header>
 		<!-- FIN DEL HEADER -->
@@ -47,8 +70,10 @@
 			<section>
 				<article id="nosotros">
 					<h2 class="titulo1">Sobre nosotros</h2>
-					<p class="parrafo1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores debitis repellat
-						esse culpa soluta veritatis maxime quam quia quasi, id laborum magnam sed qui voluptatum, deleniti
+					<p class="parrafo1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores debitis
+						repellat
+						esse culpa soluta veritatis maxime quam quia quasi, id laborum magnam sed qui voluptatum,
+						deleniti
 						optio error sapiente quas!</p>
 					<picture>
 						<img class="imagen1" src="public/img/logo.webp" alt="logo">
@@ -103,7 +128,8 @@
 							<li>Anual $20000</li>
 						</ol>
 						<p class="parrafo2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita tempora
-							laudantium, corporis molestias, neque hic odit enim asperiores quo fuga eius? Animi aspernatur
+							laudantium, corporis molestias, neque hic odit enim asperiores quo fuga eius? Animi
+							aspernatur
 							id explicabo quibusdam veniam magnam provident tenetur?</p>
 						<picture>
 							<img class="imagen2" src="public/img/logo.webp" alt="logo">
@@ -148,6 +174,9 @@
 		</footer>
 		<!-- FIN DEL FOOTER -->
 	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+	</script>
 </body>
 
 </html>
