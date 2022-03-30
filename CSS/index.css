@@ -51,12 +51,6 @@ body {
     flex-direction: column;
 }
 
-/* .container {
-    width: 90%;
-    max-width: 1080px;
-    margin: 0 auto;
-} */
-
 /* NAVEGACION */
 
 header {
@@ -86,7 +80,7 @@ header {
 .dropdown-item:focus,
 .dropdown-item:hover {
     color: var(--principal);
-    font-size: 2rem;
+    font-size: 1, 5rem;
 }
 
 /* MAIN */
@@ -154,24 +148,6 @@ h1 {
     padding-bottom: 75px;
 }
 
-/* #servicios table {
-    font-size: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    margin: 100px;
-}
-
-#servicios th {
-    background-color: var(--tertiary);
-    color: var(--secondary);
-    padding-inline: 20px;
-    text-align: center;
-}
-
-#servicios td {
-    padding-inline: 20px;
-} */
-
 #servicios .tablaMembresias {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -184,10 +160,6 @@ h1 {
     align-items: center;
     text-align: center;
     font-size: 3.2rem;
-}
-
-.border {
-    border: 1px solid black;
 }
 
 #servicios .m1 {
@@ -254,6 +226,10 @@ h1 {
 #servicios ol {
     font-size: 6rem;
     text-align: center;
+}
+
+.border {
+    border: 1px solid black;
 }
 
 #personalizados {
@@ -339,12 +315,6 @@ h1 {
     width: 600px;
 }
 
-.faqTitulo {
-    font-size: 15rem;
-    text-align: center;
-    padding: 20px;
-}
-
 #faq h2 {
     font-size: 10rem;
     text-align: center;
@@ -365,16 +335,6 @@ h1 {
 
 #formulario {
     font-size: 1.4rem;
-}
-
-#formulario {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    background-color: var(--secondary);
-    color: var(--principal);
-    text-align: center;
-    align-items: center;
-    gap: 10px;
 }
 
 form {
