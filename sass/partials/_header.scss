@@ -1,0 +1,55 @@
+/* NAVEGACION */
+
+header {
+    background-color: $secondary;
+    border-bottom: 2px solid gray;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: space-around;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: $principal;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: $principal;
+    font-size: 2rem;
+}
+
+.dropdown-item {
+    color: $principal;
+    font-size: 1.5rem;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+    color: $principal;
+    font-size: 1, 5rem;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 2em 0;
+
+        .navegacion {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header {
+        padding: 2em 0;
+        
+        .navegacion {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+}

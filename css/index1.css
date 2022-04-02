@@ -54,7 +54,7 @@ body {
 /* NAVEGACION */
 
 header {
-    background-color: var(--secondary);
+    background-color: $secondary;
     border-bottom: 2px solid gray;
 }
 
@@ -64,22 +64,22 @@ header {
 
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .show>.nav-link {
-    color: var(--principal);
+    color: $principal;
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: var(--principal);
+    color: $principal;
     font-size: 2rem;
 }
 
 .dropdown-item {
-    color: var(--principal);
+    color: $principal;
     font-size: 1.5rem;
 }
 
 .dropdown-item:focus,
 .dropdown-item:hover {
-    color: var(--principal);
+    color: $principal;
     font-size: 1, 5rem;
 }
 
@@ -94,8 +94,8 @@ header {
 }
 
 h1 {
-    color: var(--secondary);
-    text-shadow: 0 0 10px var(--tertiary);
+    color: $secondary;
+    text-shadow: 0 0 10px $tertiary;
     text-align: center;
 }
 
@@ -164,7 +164,7 @@ h1 {
 
 #servicios .m1 {
     grid-area: m1;
-    color: var(--tertiary);
+    color: $tertiary;
 }
 
 #servicios .m2 {
@@ -184,7 +184,7 @@ h1 {
 
 #servicios .i1 {
     grid-area: i1;
-    color: var(--tertiary);
+    color: $tertiary;
 }
 
 
@@ -205,7 +205,7 @@ h1 {
 
 #servicios .v1 {
     grid-area: v1;
-    color: var(--tertiary);
+    color: $tertiary;
 }
 
 
@@ -351,8 +351,8 @@ form {
         "mail ig fb tw wpp";
     grid-template-rows: 50% 50%;
     grid-template-columns: 50% 1fr 1fr 1fr 1fr;
-    background-color: var(--secondary);
-    color: var(--principal);
+    background-color: $secondary;
+    color: $principal;
     font-size: 2rem;
     text-align: center;
     align-items: center;
@@ -389,10 +389,10 @@ form {
 }
 
 .footer #servicios a {
-    color: var(--principal);
+    color: $principal;
 }
 
-/* MEDIA QUERIES*/
+/* MEDIA QUERIES */
 
 @media screen and (max-width: 768px) {
     header {
