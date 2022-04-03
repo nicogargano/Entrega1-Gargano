@@ -7,6 +7,13 @@
 @import './misc/mixins';
 @import './misc/animations';
 
+/* FONT */
+
+@font-face {
+    font-family: 'Smooch Sans', sans-serif;
+    src: url('../public/font/SmoochSans-VariableFont_wght.ttf');
+}
+
 /* PARTIALS */
 
 @import './partials/header';
@@ -18,10 +25,3 @@
 @import './views/galeria';
 @import './views/faq';
 @import './views/contacto';
-
-/* FONT */
-
-@font-face {
-    font-family: 'Smooch Sans', sans-serif;
-    src: url('../public/font/SmoochSans-VariableFont_wght.ttf');
-}
