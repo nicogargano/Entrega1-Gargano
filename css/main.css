@@ -32,6 +32,11 @@ body {
 .border {
   border: 1px solid black; }
 
+/* FONT */
+@font-face {
+  font-family: 'Smooch Sans', sans-serif;
+  src: url("../public/font/SmoochSans-VariableFont_wght.ttf"); }
+
 /* PARTIALS */
 /* NAVEGACION */
 header {
@@ -374,8 +379,3 @@ form {
 @media screen and (max-width: 500px) {
   .contactoTitulo {
     font-size: 5rem; } }
-
-/* FONT */
-@font-face {
-  font-family: 'Smooch Sans', sans-serif;
-  src: url("../public/font/SmoochSans-VariableFont_wght.ttf"); }
