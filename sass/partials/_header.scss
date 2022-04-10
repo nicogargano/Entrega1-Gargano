@@ -1,7 +1,7 @@
 /* NAVEGACION */
 
 header {
-    background-color: $secondary;
+    background-color: map-get($colours, secondary);
     border-bottom: 2px solid gray;
 }
 
@@ -11,45 +11,21 @@ header {
 
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .show>.nav-link {
-    color: $principal;
+    color: map-get($colours, principal);
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: $principal;
+    color: map-get($colours, principal);
     font-size: 2rem;
 }
 
 .dropdown-item {
-    color: $principal;
+    color: map-get($colours, principal);
     font-size: 1.5rem;
 }
 
 .dropdown-item:focus,
 .dropdown-item:hover {
-    color: $principal;
+    color: map-get($colours, principal);
     font-size: 1, 5rem;
-}
-
-/* MEDIA QUERIES */
-
-@media screen and (max-width: 768px) {
-    header {
-        padding: 2em 0;
-
-        .navegacion {
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-    }
-}
-
-@media screen and (max-width: 500px) {
-    header {
-        padding: 2em 0;
-        
-        .navegacion {
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-    }
 }

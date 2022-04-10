@@ -8,8 +8,8 @@
     padding: 1rem;
 
     h1 {
-        color: $secondary;
-        text-shadow: 0 0 10px $tertiary;
+        color: map-get($colours, secondary);
+        text-shadow: 0 0 10px map-get($colours, tertiary);
         text-align: center;
     }
 }
@@ -49,10 +49,10 @@ h1 {
         padding: 10px;
     }
     
-    p {
+    .extendTest {
         font-size: 3.2rem;
         text-align: center;
-        padding-inline: 40px;
+        padding: 40px;
     }
 }
 
@@ -76,10 +76,11 @@ h1 {
         align-items: center;
         text-align: center;
         font-size: 3.2rem;
+        @include border;
 
         .m1 {
             grid-area: m1;
-            color: $tertiary;
+            color: map-get($colours, tertiary);
         }
         
         .m2 {
@@ -96,7 +97,7 @@ h1 {
         
         .i1 {
             grid-area: i1;
-            color: $tertiary;
+            color: map-get($colours, tertiary);
         }
         
         .i2 {
@@ -113,7 +114,7 @@ h1 {
         
         .v1 {
             grid-area: v1;
-            color: $tertiary;
+            color: map-get($colours, tertiary);
         }
         
         .v2 {
@@ -160,9 +161,7 @@ h1 {
         }
 
         p {
-            font-size: 3.2rem;
-            text-align: center;
-            padding: 40px;
+            @extend .extendTest
         }
 
         ol {
@@ -234,14 +233,6 @@ h1 {
 
 @media screen and (max-width: 500px) {
     #nosotros {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-areas:
-            "titulo1"
-            "parrafo1"
-            "imagen1";
-        gap: 0;
-        
         h2 {
             font-size: 3rem;
         }
@@ -266,15 +257,6 @@ h1 {
         }
 
         #serviciosPersonalizados {
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(4, 1fr);
-            grid-template-areas:
-                "titulo2"
-                "lista1"
-                "imagen2"
-                "parrafo2";
-            gap: 0;
-
             #personalizados {
                 font-size: 3rem;
             }

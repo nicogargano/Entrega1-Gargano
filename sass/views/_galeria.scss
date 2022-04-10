@@ -58,17 +58,3 @@
         gap: 0;
     }
 }
-
-@media screen and (max-width: 500px) {
-    #galeria {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-        grid-template-areas:
-            "imagen1 imagen2"
-            "imagen3 imagen3"
-            "imagen6 imagen6"
-            "imagen6 imagen6"
-            "imagen4 imagen5";
-        gap: 0;
-    }
-}

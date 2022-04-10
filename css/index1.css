@@ -54,7 +54,7 @@ body {
 /* NAVEGACION */
 
 header {
-    background-color: $secondary;
+    background-color: map-get($colours, secondary);
     border-bottom: 2px solid gray;
 }
 
@@ -64,22 +64,22 @@ header {
 
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .show>.nav-link {
-    color: $principal;
+    color: map-get($colours, principal);
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: $principal;
+    color: map-get($colours, principal);
     font-size: 2rem;
 }
 
 .dropdown-item {
-    color: $principal;
+    color: map-get($colours, principal);
     font-size: 1.5rem;
 }
 
 .dropdown-item:focus,
 .dropdown-item:hover {
-    color: $principal;
+    color: map-get($colours, principal);
     font-size: 1, 5rem;
 }
 
@@ -94,8 +94,8 @@ header {
 }
 
 h1 {
-    color: $secondary;
-    text-shadow: 0 0 10px $tertiary;
+    color: map-get($colours, secondary);
+    text-shadow: 0 0 10px map-get($colours, tertiary);
     text-align: center;
 }
 
@@ -164,7 +164,7 @@ h1 {
 
 #servicios .m1 {
     grid-area: m1;
-    color: $tertiary;
+    color: map-get($colours, tertiary);
 }
 
 #servicios .m2 {
@@ -184,7 +184,7 @@ h1 {
 
 #servicios .i1 {
     grid-area: i1;
-    color: $tertiary;
+    color: map-get($colours, tertiary);
 }
 
 
@@ -205,7 +205,7 @@ h1 {
 
 #servicios .v1 {
     grid-area: v1;
-    color: $tertiary;
+    color: map-get($colours, tertiary);
 }
 
 
@@ -351,8 +351,8 @@ form {
         "mail ig fb tw wpp";
     grid-template-rows: 50% 50%;
     grid-template-columns: 50% 1fr 1fr 1fr 1fr;
-    background-color: $secondary;
-    color: $principal;
+    background-color: map-get($colours, secondary);
+    color: map-get($colours, principal);
     font-size: 2rem;
     text-align: center;
     align-items: center;
@@ -389,7 +389,7 @@ form {
 }
 
 .footer #servicios a {
-    color: $principal;
+    color: map-get($colours, principal);
 }
 
 /* MEDIA QUERIES */

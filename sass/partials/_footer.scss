@@ -7,8 +7,8 @@
         "mail ig fb tw wpp";
     grid-template-rows: 50% 50%;
     grid-template-columns: 50% 1fr 1fr 1fr 1fr;
-    background-color: $secondary;
-    color: $principal;
+    background-color: map-get($colours, secondary);
+    color: map-get($colours, principal);
     font-size: 2rem;
     text-align: center;
     align-items: center;
@@ -27,7 +27,7 @@
         grid-column: servicios;
         
         a {
-            color: $principal;
+            color: map-get($colours, principal);
         }
     }
     
