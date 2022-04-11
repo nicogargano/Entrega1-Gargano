@@ -130,7 +130,7 @@ h1 {
     font-size: 10rem;
     text-align: center;
     padding: 10px; }
-  #nosotros .extendTest, #nosotros #servicios #serviciosPersonalizados p, #servicios #serviciosPersonalizados #nosotros p {
+  #nosotros p {
     font-size: 3.2rem;
     text-align: center;
     padding: 40px; }
@@ -196,6 +196,10 @@ h1 {
     grid-area: parrafo2; }
   #servicios #serviciosPersonalizados .imagen2 {
     grid-area: imagen2; }
+  #servicios #serviciosPersonalizados p {
+    font-size: 3.2rem;
+    text-align: center;
+    padding: 40px; }
   #servicios #serviciosPersonalizados ol {
     font-size: 6rem;
     text-align: center; }
