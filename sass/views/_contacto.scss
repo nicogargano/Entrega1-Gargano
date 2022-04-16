@@ -11,6 +11,21 @@ form {
     padding: 5px;
 }
 
+.btn-primary {
+    color: map-get($colours, secondary);
+    background-color: map-get($colours, tertiary);
+    border-color: map-get($colours, tertiary);
+    width: 200px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.btn-primary:hover {
+    color: map-get($colours, secondary);
+    background-color: map-get($colours, tertiary);
+    border-color: map-get($colours, tertiary);
+}
+
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 768px) {

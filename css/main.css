@@ -97,15 +97,16 @@ header {
 /* VIEWS */
 /* MAIN */
 .home {
-  background-image: url(../public/img/Gimnasio.jpg);
+  background-image: url(../public/img/Gimnasio.png);
   background-repeat: no-repeat;
-  background-position: center;
-  font-size: 19.5rem;
-  padding: 1rem; }
+  background-position: center; }
   .home h1 {
     color: #fff;
     text-shadow: 0 0 10px #880707;
-    text-align: center; }
+    text-align: center;
+    max-width: 900px;
+    font-size: 13rem;
+    margin: 40px auto 0px auto; }
 
 .h1,
 h1 {
@@ -116,7 +117,7 @@ h1 {
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
   grid-template-areas: "titulo1 titulo1" "parrafo1 imagen1";
-  gap: 40px;
+  gap: 0px;
   align-items: center;
   justify-items: center;
   padding-bottom: 150px; }
@@ -138,8 +139,7 @@ h1 {
 #servicios #membresias {
   font-size: 10rem;
   text-align: center;
-  padding: 10px;
-  padding-bottom: 75px; }
+  padding: 75px 10px; }
 
 #servicios .tablaMembresias {
   display: grid;
@@ -185,7 +185,7 @@ h1 {
   grid-template-areas: "titulo2 titulo2" "lista1 lista1" "parrafo2 imagen2";
   align-items: center;
   justify-items: center;
-  padding-bottom: 50px; }
+  padding-bottom: 250px; }
   #servicios #serviciosPersonalizados #personalizados {
     grid-area: titulo2;
     font-size: 10rem;
@@ -205,12 +205,17 @@ h1 {
     text-align: center; }
 
 /* MEDIA QUERIES */
+@media screen and (max-width: 991px) {
+  .home h1 {
+    font-size: 10rem; } }
+
 @media screen and (max-width: 768px) {
   #nosotros {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas: "titulo1" "parrafo1" "imagen1";
-    gap: 0; }
+    gap: 0;
+    padding-bottom: 0; }
     #nosotros h2 {
       font-size: 6rem; }
     #nosotros p {
@@ -223,7 +228,8 @@ h1 {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
     grid-template-areas: "titulo2" "lista1" "imagen2" "parrafo2";
-    gap: 0; }
+    gap: 0;
+    padding-bottom: 50px; }
     #servicios #serviciosPersonalizados #personalizados {
       font-size: 6rem; }
     #servicios #serviciosPersonalizados ol {
@@ -235,6 +241,8 @@ h1 {
     font-size: 10rem; } }
 
 @media screen and (max-width: 500px) {
+  .home h1 {
+    font-size: 6rem; }
   #nosotros h2 {
     font-size: 3rem; }
   #nosotros p {
@@ -329,6 +337,19 @@ h1 {
 form {
   border: 2px solid gray;
   padding: 5px; }
+
+.btn-primary {
+  color: #fff;
+  background-color: #880707;
+  border-color: #880707;
+  width: 200px;
+  font-size: 1.5rem;
+  text-align: center; }
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #880707;
+  border-color: #880707; }
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 768px) {

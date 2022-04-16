@@ -1,16 +1,18 @@
 /* MAIN */
 
 .home {
-    background-image: url(../public/img/Gimnasio.jpg);
+    background-image: url(../public/img/Gimnasio.png);
     background-repeat: no-repeat;
     background-position: center;
-    font-size: 19.5rem;
-    padding: 1rem;
+    
 
     h1 {
         color: map-get($colours, secondary);
         text-shadow: 0 0 10px map-get($colours, tertiary);
         text-align: center;
+        max-width: 900px;
+        font-size: 13rem;
+        margin: 40px auto 0px auto;
     }
 }
 
@@ -26,7 +28,7 @@ h1 {
     grid-template-areas:
         "titulo1 titulo1"
         "parrafo1 imagen1";
-    gap: 40px;
+    gap: 0px;
     align-items: center;
     justify-items: center;
     padding-bottom: 150px;
@@ -60,8 +62,7 @@ h1 {
     #membresias {
         font-size: 10rem;
         text-align: center;
-        padding: 10px;
-        padding-bottom: 75px;
+        padding: 75px 10px;
     }
 
     .tablaMembresias {
@@ -140,7 +141,7 @@ h1 {
             "parrafo2 imagen2";
         align-items: center;
         justify-items: center;
-        padding-bottom: 50px;
+        padding-bottom: 250px;
 
         #personalizados {
             grid-area: titulo2;
@@ -175,6 +176,14 @@ h1 {
 
 /* MEDIA QUERIES */
 
+@media screen and (max-width: 991px) {
+    .home {
+        h1 {
+            font-size: 10rem;
+        }
+    }
+}
+
 @media screen and (max-width: 768px) {
     #nosotros {
         grid-template-columns: 1fr;
@@ -184,6 +193,7 @@ h1 {
             "parrafo1"
             "imagen1";
         gap: 0;
+        padding-bottom: 0;
 
         h2 {
             font-size: 6rem;
@@ -212,6 +222,7 @@ h1 {
                 "imagen2"
                 "parrafo2";
             gap: 0;
+            padding-bottom: 50px;
             
             #personalizados {
                 font-size: 6rem;
@@ -234,6 +245,12 @@ h1 {
 }
 
 @media screen and (max-width: 500px) {
+    .home {
+        h1 {
+            font-size: 6rem;
+        }
+    }
+
     #nosotros {
         h2 {
             font-size: 3rem;
