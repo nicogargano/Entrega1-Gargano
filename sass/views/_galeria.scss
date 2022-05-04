@@ -1,5 +1,15 @@
 /* GALERIA */
 
+.carousel-caption {
+    color: map-get($colours, tertiary);
+    font-size: 2rem;
+}
+
+.h5, h5 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
 #galeria {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
